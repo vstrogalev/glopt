@@ -1,0 +1,11 @@
+.title {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: $title-color;
+	&_subtitle {
+		font-size: 21px;
+		font-weight: 300;
+	}
+}

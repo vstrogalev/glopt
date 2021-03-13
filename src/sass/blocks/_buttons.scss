@@ -1,0 +1,21 @@
+.btn {
+	display: block;
+	width: 160px;
+	height: 45px;
+	border-radius: 20px;
+	border: none;
+	background-color: $main-color;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.btn_big {
+	margin: 39px auto 0 auto;
+	width: 230px;
+	height: 57px;
+	font-size: 15px;
+	font-weight: bold;
+}
