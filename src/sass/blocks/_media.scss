@@ -144,6 +144,14 @@
             }
         }
     }
+    .questions {
+        &__form {
+            width: 100%;
+        }
+        &__frm {
+            height: 275px;
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -322,5 +330,10 @@
     .testimonials {
         padding: 25px 0 30px 0;
         
+    }
+    .questions {
+        &__frm {
+            height: 105%;
+        }
     }
 }

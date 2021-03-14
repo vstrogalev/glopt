@@ -1,0 +1,86 @@
+.questions {
+    min-height: 438px;
+    padding-top: 62px;
+    background: grey url('../../img/questions.jpg') no-repeat center center/cover;
+    &__form {
+        width: 896px;
+        height: 297px;
+        margin: 0 auto;
+    }
+    &__header {
+        width: 100%;
+        height: 68px;
+        background-color: #25333c;
+        padding-top: 15px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: -5px;
+    }
+    &__frm {
+        width: 100%;
+        height: 229px;
+        padding: 18px 42px 10px 42px;
+        background-color: rgba(255,255,255, 0.7);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        row-gap: 8px;
+        column-gap: 6px;
+        &-item {
+            width: 265px;
+            height: 45px;
+            border-radius: 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 28px;
+            border: solid 1px rgba(0, 0, 0, 0.21);
+        }
+        &-label {
+            font-size: 13px;
+            font-weight: 300;
+            text-align: left;
+            color: rgba(16, 16, 16, 0.7);
+        }
+        &-input {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.85;
+            text-align: left;
+            color: rgba(16, 16, 16, 0.7);
+        }
+        &-textarea {
+            width: 100%;
+            height: 71px;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 0 28px;
+            border: solid 1px rgba(0, 0, 0, 0.21);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            textarea {
+                width: 100%;
+                resize: none;
+                border: none;
+            }
+        }
+        &-btn {
+            position: inherit;
+            bottom: auto;
+            left: auto;
+            transform: none;
+        }
+    }
+}
