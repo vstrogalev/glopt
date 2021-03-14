@@ -21,10 +21,22 @@ h1, h2, h3 {
     position: relative;
 }
 
+.divider {
+    width: 148px;
+    height: 1px;
+    margin: 20px auto 17px auto;
+    background-color: $main-color;
+}
+
 @import 'blocks/menu';
 @import 'blocks/promo';
 @import 'blocks/buttons';
+@import 'blocks/iconBig';
 @import 'blocks/titles';
 @import 'blocks/opportunity';
+@import 'blocks/ourWork';
+@import 'blocks/separator';
+@import 'blocks/prices';
+@import 'blocks/consultation';
 
 @import 'blocks/media';

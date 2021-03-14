@@ -118,6 +118,25 @@
             }
         }
     }
+    .title_subtitle {
+        font-size: 18px;
+    }
+    .ourWork {
+        &__item {
+            &-title {
+                font-size: 15px;
+            }
+            &-descr {
+                font-size: 12px;
+            }
+        }
+    }
+    .separator {
+        padding: 40px 0;
+        &__descr {
+            font-size: 17px;
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -182,6 +201,10 @@
     .btn_big {
         margin-top: 0;
     }
+    .iconBig {
+        width: 80px;
+        height: 80px;
+    }
     .hamburger {
 		display: block;
 		position: fixed;
@@ -231,6 +254,55 @@
             }
             &-descr {
                 font-size: 12px;
+            }
+        }
+    }
+    .title {
+        font-size: 20px;
+        &_subtitle {
+            font-size: 14px;
+        }
+    }
+    .ourWork {
+        padding: 20px 0 40px 0;
+        &__wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__item {
+            margin-top: 20px;
+            &-title {
+                margin-top: 10px;
+            }
+        }
+    }
+    .separator {
+        padding: 30px 0;
+        min-height: 290px;
+        &__title {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 13px;
+            padding: 0 15px;
+        }
+    }
+    .prices {
+        padding: 25px 0 40px 0;
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .consultation {
+        padding: 0px 0 40px 0;
+        &__form {
+            margin-top: 50px;
+            &-frm {
+                padding-top: 50px;
+            }
+            &-item {
+                width: 80%;
             }
         }
     }

@@ -10,6 +10,16 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
+	&_center {
+		margin: 0 auto;
+	}
+	&_form {
+		width: 180px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
 }
 
 .btn_big {

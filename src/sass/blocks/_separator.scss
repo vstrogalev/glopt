@@ -1,0 +1,20 @@
+.separator {
+    min-height: 342px;
+    padding: 58px 0 76px 0;
+    background: grey url('../../img/agent\ in\ china.jpg') no-repeat center center/cover;
+    &__title {
+        margin-top: 20px;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__descr {
+        padding: 0 77px;
+        margin-top: 22px;
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+    }
+}
