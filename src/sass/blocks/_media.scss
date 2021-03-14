@@ -306,4 +306,10 @@
             }
         }
     }
+    .scheme {
+        padding: 30px 0 30px 0;
+        &__item {
+            width: 80%;
+        }
+    }
 }
