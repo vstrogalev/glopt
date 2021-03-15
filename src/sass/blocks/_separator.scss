@@ -1,7 +1,7 @@
 .separator {
     min-height: 342px;
     padding: 58px 0 76px 0;
-    background: grey url('../../img/agent\ in\ china.jpg') no-repeat center center/cover;
+    background: grey url('../img/agent\ in\ china.jpg') no-repeat center center/cover;
     &__title {
         margin-top: 20px;
         font-size: 26px;
@@ -18,6 +18,6 @@
         color: #ffffff;
     }
     &_managers {
-        background: grey url('../../img/managers.jpg') no-repeat center center/cover;
+        background: grey url('../img/managers.jpg') no-repeat center center/cover;
     }
 }
