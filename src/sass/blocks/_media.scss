@@ -61,19 +61,13 @@
         padding: 23px 0 50px 0;
         &__logo {
             width: 75px;
-            img {
-                width: 100%;
-            }
+            img {width: 100%;}
         }
-        &__header {
-            flex-direction: column;
-        }
+        &__header {flex-direction: column;}
         &__nav {
             margin-top: 20px;
             &-item {
-                a {
-                    font-size: 17px;
-                }
+                a {font-size: 17px;}
             }
         }
         &__contacts {
@@ -81,19 +75,13 @@
             flex-direction: row;
             align-items: center;
         }
-        &__divider {
-            margin: 20px auto 0;
-        }
+        &__divider {margin: 20px auto 0;}
         &__subtitle {
             margin-top: 26px;
             font-size: 21px;
         }
-        &__title {
-            font-size: 44px;
-        }
-        &__location {
-            font-size: 22px;
-        }
+        &__title {font-size: 44px;}
+        &__location {font-size: 22px;}
         &__features {
             column-gap: 10px;
             &-descr {
@@ -154,6 +142,19 @@
     }
     .testimonials-button-prev, .testimonials-button-next {
         display: none;
+    }
+    .footer {
+        &__logo {width: 70px;}
+        &__text {font-size: 14px;}
+        &__contacts {
+            flex-direction: column; 
+            align-items: flex-end;
+            row-gap: 5px;
+        }
+        &__phone {
+            &-text {display: none;}
+            &-number {}
+        }
     }
 }
 
@@ -290,6 +291,7 @@
         }
         &__item {
             margin-top: 20px;
+            width: 100%;
             &-title {
                 margin-top: 10px;
             }
@@ -332,14 +334,24 @@
     }
     .testimonials {
         padding: 25px 0 30px 0;
-        
+        &-button-prev, &-button-next {display: none;}
     }
     .questions {
         &__frm {
             height: 105%;
         }
     }
-    .testimonials-button-prev, .testimonials-button-next {
-        display: none;
+    .footer {
+        &__header {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        &__contacts {
+            align-items: center;
+        }
+        &__bottom {
+            padding: 0 20px;
+
+        }
     }
 }

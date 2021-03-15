@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			nextEl: '.testimonials-button-next',
 			prevEl: '.testimonials-button-prev'
 		},
+		autoHeight: true,
 		loop: true,
 		speed: 800,
 		spaceBetween: 45,
