@@ -43,8 +43,7 @@
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff"> -->
     
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -356,26 +355,43 @@
             <h2 class="title">отзывы наших клиентов</h2>
             <div class="divider"></div>
             <h3 class="title title_subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h3>
-            <div class="testimonials__wrapper">
-                <div class="testimonials__item">
-                    <img class="testimonials__item-photo" src="img/testimonials/dmitry.jpg" alt="olga">
-                    <div class="testimonials__item-name">Дмитрий Иванов</div>
-                    <div class="testimonials__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique fuga, rem et ipsa, minima aperiam nisi voluptate quas dicta iusto voluptates reiciendis fugiat assumenda commodi molestias expedita id repellat aliquid?</div>
+            <div class="testimonials__wrapper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__item-photo">
+                            <img src="img/testimonials/dmitry.jpg" alt="olga">
+                        </div>
+                        <div class="testimonials__item-name">Дмитрий Иванов</div>
+                        <div class="testimonials__item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique fuga, rem et ipsa, minima aperiam nisi voluptate quas dicta iusto voluptates reiciendis fugiat assumenda commodi molestias expedita id repellat aliquid?</div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__item-photo">
+                            <img src="img/testimonials/olga.jpg" alt="olga">
+                        </div>
+                        <div class="testimonials__item-name">Анисимова Ольга</div>
+                        <div class="testimonials__item-text">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__item-photo">
+                            <img src="img/testimonials/sergey.jpg" alt="olga">
+                        </div>
+                        <div class="testimonials__item-name">Серге Валиев</div>
+                        <div class="testimonials__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates natus ea accusamus iste laborum tempore laboriosam, cum nam aut dolores quam! Delectus, molestiae. Atque nulla necessitatibus ducimus harum quasi.</div>
+                    </div>
+                    <div class="testimonials__item swiper-slide">
+                        <div class="testimonials__item-photo">
+                            <img src="img/testimonials/sergey.jpg" alt="olga">
+                        </div>
+                        <div class="testimonials__item-name">Серге Валиев</div>
+                        <div class="testimonials__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates natus ea accusamus iste laborum tempore laboriosam, cum nam aut dolores quam! Delectus, molestiae. Atque nulla necessitatibus ducimus harum quasi.</div>
+                    </div>
                 </div>
-                <div class="testimonials__item">
-                    <img class="testimonials__item-photo" src="img/testimonials/olga.jpg" alt="olga">
-                    <div class="testimonials__item-name">Анисимова Ольга</div>
-                    <div class="testimonials__item-text">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                <!-- Добавляем если нам нужны стрелки управления -->
+				<div class="testimonials-button-prev">
+                    <img src="icons/prevArrow.png" alt="prevArrow">
                 </div>
-                <div class="testimonials__item">
-                    <img class="testimonials__item-photo" src="img/testimonials/sergey.jpg" alt="olga">
-                    <div class="testimonials__item-name">Серге Валиев</div>
-                    <div class="testimonials__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates natus ea accusamus iste laborum tempore laboriosam, cum nam aut dolores quam! Delectus, molestiae. Atque nulla necessitatibus ducimus harum quasi.</div>
-                </div>
-                <div class="testimonials__item">
-                    <img class="testimonials__item-photo" src="img/testimonials/sergey.jpg" alt="olga">
-                    <div class="testimonials__item-name">Серге Валиев</div>
-                    <div class="testimonials__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates natus ea accusamus iste laborum tempore laboriosam, cum nam aut dolores quam! Delectus, molestiae. Atque nulla necessitatibus ducimus harum quasi.</div>
+				<div class="testimonials-button-next">
+                    <img src="icons/nextArrow.png" alt="nextArrow">
                 </div>
             </div>
         </div>
@@ -410,11 +426,21 @@
             </div>
         </div>
     </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.6063717386196!2d37.625029316046216!3d55.74796799983211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1615748184484!5m2!1sru!2sru" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
     
+    <footer class="footer">
+        <div class="container">
+            
+        </div>
+    </footer>
+
     <!-- scripts  -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

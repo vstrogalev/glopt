@@ -15,56 +15,47 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	});
 
-	// slick slider 
-	// $('.testimonials__wrapper').slick({
-	// 	centerMode: true,
-	// 	centerPadding: '60px',
-	// 	slidesToShow: 3,
-	// 	responsive: [{
-	// 			breakpoint: 768,
-	// 			settings: {
-	// 				arrows: false,
-	// 				centerMode: true,
-	// 				centerPadding: '40px',
-	// 				slidesToShow: 3
-	// 			}
-	// 		},
-	// 		{
-	// 			breakpoint: 480,
-	// 			settings: {
-	// 				arrows: false,
-	// 				centerMode: true,
-	// 				centerPadding: '40px',
-	// 				slidesToShow: 1
-	// 			}
-	// 		}
-	// 	]
-	// });
-	$('.testimonials__wrapper').slick({
-		centerMode: true,
-		centerPadding: '200px',
-		infinite: true,
-		slidesToShow: 1,
-		prevArrow: '<button type="button" class="slick-prev"><img src="icons/prevArrow.png"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="icons/nextArrow.png"></button>',
-		responsive: [{
-				breakpoint: 769,
-				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '140px',
-					slidesToShow: 1
-				}
+	new Swiper('.testimonials__wrapper', {
+		navigation: {
+			nextEl: '.testimonials-button-next',
+			prevEl: '.testimonials-button-prev'
+		},
+		loop: true,
+		speed: 800,
+		spaceBetween: 45,
+		slidesPerView: 3,
+		effect: 'coverflow',
+		coverflowEffect: {
+			// Угол
+			rotate: -20,
+			// Наложение
+			stretch: 20,
+			// Тень
+			slideShadows: false,
+		},
+		keyboard: {
+			// Включить\выключить
+			enabled: true,
+			// Включить\выключить
+			// только когда слайдер
+			// в пределах вьюпорта
+			onlyInViewport: true,
+			// Включить\выключить
+			// управление клавишами
+			// pageUp, pageDown
+			pageUpDown: true,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
 			},
-			{
-				breakpoint: 480,
-				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 1
-				}
+			480: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+			992: {
+				slidesPerView: 3,
 			}
-		]
+		},
 	});
 });

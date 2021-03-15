@@ -6,29 +6,24 @@
         margin: 31px auto 0 auto;
         position: relative;
         width: 100%;
-        .slick-prev, .slick-next {
-            position: absolute;
-            border: none;
-            top: 20px;
-            left: 40%;
-            z-index: 1000;
-        }
-        .slick-next {
-            left: auto;
-            right: 40%;
-        }
     }
     &__item {
-        //width: 600px;
+        height: 240px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0 22px;
         &-photo {
-            width: 114px;
-            height: 114px;
             margin: 0 auto;
             border-radius: 100%;
             border: none;
             background-color: #fff;
-            object-fit: cover;
+            img {
+                width: 114px;
+                height: 114px;
+                object-fit: cover;
+            }
         }
         &-name {
             margin-top: 18px;
@@ -44,4 +39,20 @@
             color: $descr-color;
         }
     }
+}
+// .swiper-container {
+//     width: 100%;
+//     height: 240px;
+// }
+.testimonials-button-prev {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 1000;
+}
+.testimonials-button-next {
+	position: absolute;
+    top: 10%;
+    right: 40%;
+    z-index: 1000;
 }

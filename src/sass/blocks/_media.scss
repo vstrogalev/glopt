@@ -152,6 +152,9 @@
             height: 275px;
         }
     }
+    .testimonials-button-prev, .testimonials-button-next {
+        display: none;
+    }
 }
 
 @media (max-width: 426px) {
@@ -335,5 +338,8 @@
         &__frm {
             height: 105%;
         }
+    }
+    .testimonials-button-prev, .testimonials-button-next {
+        display: none;
     }
 }
