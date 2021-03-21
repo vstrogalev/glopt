@@ -17,9 +17,11 @@
             justify-self: center;
             align-self: center;
             width: 62px;
+            img {
+                width: 100%;
+            }
         }
         &-content {
-            //margin-left: 17px;
             margin-left: 17px;
             width: 447px;
         }
